@@ -42,9 +42,11 @@
     "jest-cli": "^22.0.4",
     "jest-react-native": "^18.0.0",
     "jsdom": "^11.5.1",
-    "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.51.0",
     "react-native-mock-render": "^0.0.19"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.51.0"
   }
 }
