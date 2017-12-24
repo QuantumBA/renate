@@ -7,7 +7,7 @@ const cli = require('eslint/lib/cli')
 
 const args =
 {
-  _: process.cwd(),
+  _: [process.cwd()],
   config: join(__dirname, '..', 'resources', 'eslint.json'),
   env: ['browser', 'es6', 'jest', 'node'],
   ignorePattern: ['coverage/'],

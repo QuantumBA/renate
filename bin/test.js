@@ -4,10 +4,11 @@ const join     = require('path').join
 const readFile = require('fs').readFile
 
 const coveralls = require('coveralls').handleInput
-const runCLI    = require('jest/build/cli').runCLI
+const runCLI    = require('jest-cli/build/cli').runCLI
 
 
 const CWD = process.cwd()
+const LIB = join(__dirname, '..', 'lib')
 
 
 const args =
@@ -16,9 +17,9 @@ const args =
   coverage: true,
   notify: true,
   preset: 'jest-react-native',
-  setupTestFrameworkScriptFile: join(__dirname, 'setupTests.js'),
+  setupTestFrameworkScriptFile: join(LIB, 'setupTests.js'),
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  transform: {'\\.js$': join(__dirname, 'transformer.js')},
+  transform: {'\\.js$': join(LIB, 'transformer.js')},
   transformIgnorePatterns: ['node_modules/?!(tcomb-form-native)']
 }
 const projects = [CWD]
