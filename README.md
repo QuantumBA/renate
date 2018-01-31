@@ -1,4 +1,6 @@
 # renate
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/QuantumBA/renate.svg)](https://greenkeeper.io/)
 React Native Tester
 
 `renate` is a heavily opiniated set of tools already configured to test React
